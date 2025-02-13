@@ -17,7 +17,7 @@ public static class MauiProgram
 			.ConfigureMauiHandlers(handlers =>
 			{
 #if IOS
-				handlers.AddHandler<ContentPage, Handlers.MenuBarContentPageHandler>();
+				handlers.AddHandler<ContentPage, Handlers.ContentPageHandler>();
 #endif
 			});
 

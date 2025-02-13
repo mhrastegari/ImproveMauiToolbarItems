@@ -11,7 +11,7 @@ namespace ImproveMauiToolbarItems.Handlers
 {
     // Callsite only reachable on iOS 13 and above
     [SuppressMessage("Interoperability", "CA1416:Validate platform compatibility")]
-    public sealed class MenuBarContentPageHandler : PageHandler
+    public sealed class ContentPageHandler : PageHandler
     {
         private ContentPage? ThisPage => VirtualView as ContentPage;
 
