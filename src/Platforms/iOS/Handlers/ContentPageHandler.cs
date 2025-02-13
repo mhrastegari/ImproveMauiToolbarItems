@@ -83,12 +83,6 @@ namespace ImproveMauiToolbarItems.Handlers
 
             var rightBarItems = new List<UIBarButtonItem>();
 
-            foreach (var item in contentPage.ToolbarItems)
-            {
-                if (item.Order != ToolbarItemOrder.Secondary)
-                    rightBarItems.Add(item.ToUIBarButtonItem());
-            }
-
             var secondaryItems = contentPage.ToolbarItems
                 .Where(x => x.Order == ToolbarItemOrder.Secondary)
                 .Select(CreateUIMenuElement)
@@ -99,6 +93,14 @@ namespace ImproveMauiToolbarItems.Handlers
                 var menu = UIMenu.Create(string.Empty, null, UIMenuIdentifier.Edit, UIMenuOptions.DisplayInline, secondaryItems);
                 var menuButton = new UIBarButtonItem(UIImage.FromBundle("cupertino_ellipsis.png"), menu);
                 rightBarItems.Add(menuButton);
+            }
+
+            foreach (var item in contentPage.ToolbarItems)
+            {
+                if (item.Order != ToolbarItemOrder.Secondary)
+                {
+                    rightBarItems.Add(item.ToUIBarButtonItem());
+                }
             }
 
             navigationItem.RightBarButtonItems = rightBarItems.ToArray();
