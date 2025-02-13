@@ -6,7 +6,6 @@ using UIKit;
 using ContentView = Microsoft.Maui.Platform.ContentView;
 
 //https://github.com/securefolderfs-community/SecureFolderFS/blob/master/src/Platforms/SecureFolderFS.Maui/Platforms/iOS/Handlers/ContentPageHandler.cs
-
 namespace ImproveMauiToolbarItems.Handlers
 {
     // Callsite only reachable on iOS 13 and above
