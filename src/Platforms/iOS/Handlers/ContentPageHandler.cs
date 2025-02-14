@@ -97,7 +97,7 @@ namespace ImproveMauiToolbarItems.Handlers
 
             foreach (var item in contentPage.ToolbarItems)
             {
-                if (item.Order != ToolbarItemOrder.Secondary)
+                if (item.Order is not ToolbarItemOrder.Secondary)
                 {
                     rightBarItems.Add(item.ToUIBarButtonItem());
                 }
@@ -110,7 +110,11 @@ namespace ImproveMauiToolbarItems.Handlers
         {
             var imagePath = item.IconImageSource?.ToString();
             var image = string.IsNullOrEmpty(imagePath) ? null : UIImage.FromBundle(imagePath);
-            var action = UIAction.Create(item.Text, image, null, _ => item.Command?.Execute(item.CommandParameter));
+            var action = UIAction.Create(item.Text, image, null, _ =>
+            {
+                item.Command?.Execute(item.CommandParameter);
+                ((IMenuItemController)item).Activate();
+            });
             return action;
         }
     }
