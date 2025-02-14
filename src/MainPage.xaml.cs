@@ -9,6 +9,17 @@ public partial class MainPage : ContentPage
 		InitializeComponent();
 	}
 
+	private async void OnPrimaryItemClicked(object sender, EventArgs e)
+	{
+		await DisplayAlert("Primary Item Clicked", "You clicked the Primary Item.", "OK");
+	}
+
+	private async void OnSecondaryItemClicked(object sender, EventArgs e)
+	{
+		var toolbarItem = sender as ToolbarItem;
+		await DisplayAlert("Secondary Item Clicked", $"{toolbarItem?.Text} was clicked.", "OK");
+	}
+
 	private void OnCounterClicked(object sender, EventArgs e)
 	{
 		count++;

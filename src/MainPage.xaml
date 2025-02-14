@@ -5,11 +5,25 @@
 
     <Page.ToolbarItems>
         <ToolbarItem
-            Order="Secondary"
-            Text="Item 1"/>
+            Order="Primary"
+            Text="Primary Item"
+            IconImageSource="add.png"
+            Clicked="OnPrimaryItemClicked"/>
+
         <ToolbarItem
             Order="Secondary"
-            Text="Item 2"/>
+            Text="Item 1"
+            Clicked="OnSecondaryItemClicked"/>
+
+        <ToolbarItem
+            Order="Secondary"
+            Text="Item 2"
+            Clicked="OnSecondaryItemClicked"/>
+
+        <ToolbarItem
+            Order="Secondary"
+            Text="Item 3"
+            Clicked="OnSecondaryItemClicked"/>
     </Page.ToolbarItems>
 
     <ScrollView>
