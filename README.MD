@@ -5,5 +5,5 @@ This project demonstrates how to improve the appearance and behavior of secondar
 # Results
 
 <video width="600" controls>
-  <source src="result.mov" type="video/mp4">
+  <source src="https://github.com/mhrastegari/ImproveMauiToolbarItems/blob/main/result.mp4" type="video/mp4">
 </video>
