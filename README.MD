@@ -4,6 +4,4 @@ This project demonstrates how to improve the appearance and behavior of secondar
 
 # Results
 
-<video width="600" controls>
-  <source src="https://github.com/mhrastegari/ImproveMauiToolbarItems/blob/main/result.mp4" type="video/mp4">
-</video>
+![Demo](https://github.com/mhrastegari/ImproveMauiToolbarItems/blob/main/result.gif)
