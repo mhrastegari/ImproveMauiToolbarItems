@@ -11,7 +11,7 @@ public partial class MainPage : ContentPage
 
 	private async void OnPrimaryItemClicked(object sender, EventArgs e)
 	{
-		await DisplayAlert("Primary Item Clicked", "You clicked the Primary Item.", "OK");
+		await DisplayAlert("Primary Item Clicked", "Add was clicked.", "OK");
 	}
 
 	private async void OnSecondaryItemClicked(object sender, EventArgs e)

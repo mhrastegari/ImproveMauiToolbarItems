@@ -6,23 +6,20 @@
     <Page.ToolbarItems>
         <ToolbarItem
             Order="Primary"
-            Text="Primary Item"
+            Text="Add"
             IconImageSource="add.png"
             Clicked="OnPrimaryItemClicked"/>
-
         <ToolbarItem
             Order="Secondary"
-            Text="Item 1"
+            Text="Settings"
             Clicked="OnSecondaryItemClicked"/>
-
         <ToolbarItem
             Order="Secondary"
-            Text="Item 2"
+            Text="About"
             Clicked="OnSecondaryItemClicked"/>
-
         <ToolbarItem
             Order="Secondary"
-            Text="Item 3"
+            Text="Logout"
             Clicked="OnSecondaryItemClicked"/>
     </Page.ToolbarItems>
 
